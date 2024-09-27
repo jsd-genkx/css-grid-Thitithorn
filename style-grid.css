@@ -1,11 +1,23 @@
-/* exercise 1 */
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+gap: 20px;
+grid-template-areas: 
+"header header"
+"main sidebar"
+"footer footer";
+}
 
-/* exercise 2 */
-
-/* exercise 3 */
-
-/* exercise 4 */
-
-/* exercise 5 */
-
-/* exercise 6 (optional) - follow the assigned YT video */
+.item-1 { 
+    grid-area: header; 
+} 
+.item-2 { 
+    grid-area: main; 
+} 
+.item-3 { 
+    grid-area: sidebar; 
+} 
+.item-4 { 
+    grid-area: footer; 
+}
